@@ -81,10 +81,10 @@ cd rusk-wallet0.12.0-linux-x64/
 * Bu komutları girmeden önce `nano /opt/dusk/services/rusk.conf.user` içi boş olur
 * Bu komutları girdikten sonra `nano /opt/dusk/services/rusk.conf.user` içi dolu olur
 * Bu komutu girerken `İPADRESİ` kısmını düzenleyin
-
+```
 echo 'KADCAST_PUBLIC_ADDRESS=İPADRESİ:9000' > /opt/dusk/services/rusk.conf.user;
 echo 'KADCAST_LISTEN_ADDRESS=İPADRESİ:9000' >> /opt/dusk/services/rusk.conf.user;
-
+```
 ## Erişim izni:
 
 * Ayrı ayrı girin
