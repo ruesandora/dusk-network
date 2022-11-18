@@ -54,6 +54,7 @@ cd rusk-wallet0.12.0-linux-x64/
 ./rusk-wallet
 ```
 * Dün kurduğumuz cüzdanın 12 kelimesini import (recovery) edin.
+* 12 kelimeyi recover ettikten sonra cüzdanın içine girip `export provisioner key-pair` yapınız
 
 ## Şimdi burası karışık arkadaşlar dikkatli okumayana küserim:
 
