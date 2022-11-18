@@ -27,7 +27,7 @@ lsb_release -r
 
 ## Sunucuyu çözdüyseniz, sıfırdan okuşturacağınız için cüzdanı taşımak gerekli, burdan başlayalım:
 
-* Hali hazırda ubuntu 22 versionlu sunucuna kurduysan buradan başla
+* Hali hazırda ubuntu 22 versionlu sunucuna kurduysan [Buradan başla](https://github.com/ruesandora/dusk-network/blob/main/node-setup.md#%C5%9Fimdi-buras%C4%B1-kar%C4%B1%C5%9F%C4%B1k-arkada%C5%9Flar-dikkatli-okumayana-k%C3%BCserim)
 ```
 sudo apt update
 ```
