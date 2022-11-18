@@ -66,7 +66,23 @@ cd rusk-wallet0.12.0-linux-x64/
 
 ![image](https://user-images.githubusercontent.com/101149671/202683078-1e8f33e8-a280-49a7-8dd7-d85d608c39d1.png)
 
-## Şimdi üzerine yazmamız gereken bir dosya var:
+## Erişim izni:
+
+* Ayrı ayrı girin
+
+```
+ufw allow 9000:9005/udp
+
+curl --proto '=https' --tlsv1.2 -sSf https://dusk-infra.ams3.digitaloceanspaces.com/rusk/itn-installer.sh | sh
+```
+## Şimdi altta ki komutu çalıştırın:
+
+* Şifre yazan kısma cüzdanı girerken kullandığımız şifreyi yazıp çalıştırın
+```
+echo 'DUSK_CONSENSUS_KEYS_PASS=ŞİFRE' > /opt/dusk/services/dusk.conf
+```
+
+## Şimdi masaüstüne attığımız dosyayı üzerine yazmamız gerekiyor:
 
 * Winscp ile `/opt/dusk/conf` içine girelim
 * Kısa yol: Kırmızılı yere tıklayıp, yeşil yere yapıştırarak aratmak:
@@ -84,21 +100,6 @@ cd rusk-wallet0.12.0-linux-x64/
 ```
 echo 'KADCAST_PUBLIC_ADDRESS=İPADRESİ:9000' > /opt/dusk/services/rusk.conf.user;
 echo 'KADCAST_LISTEN_ADDRESS=İPADRESİ:9000' >> /opt/dusk/services/rusk.conf.user;
-```
-## Erişim izni:
-
-* Ayrı ayrı girin
-
-```
-ufw allow 9000:9005/udp
-
-curl --proto '=https' --tlsv1.2 -sSf https://dusk-infra.ams3.digitaloceanspaces.com/rusk/itn-installer.sh | sh
-```
-## Şimdi altta ki komutu çalıştırın:
-
-* Şifre yazan kısma cüzdanı girerken kullandığımız şifreyi yazıp çalıştırın
-```
-echo 'DUSK_CONSENSUS_KEYS_PASS=ŞİFRE' > /opt/dusk/services/dusk.conf
 ```
 
 ## Şimdi nodu çalıştırın:
