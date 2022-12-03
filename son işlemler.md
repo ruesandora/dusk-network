@@ -16,7 +16,7 @@ tar -xvf ruskwallet0.13.0-linux-x64.tar.gz
  * Bu komut ile gerekli dizine giriyoruz:
 
 ```
-cd rusk-wallet0.12.0-linux-x64/
+cd rusk-wallet0.13.0-linux-x64/
 ```
 * Bu komut ile cüzdan oluşturuyoruz:
 ```
