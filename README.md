@@ -6,7 +6,7 @@ wget https://github.com/dusk-network/wallet-cli/releases/download/v0.12.0/ruskwa
 ## Daha sonra bu komut ile dosyayı açıyoruz:;
 
 ```
-tar -xvf ruskwallet0.12.0-linux-x64.tar.gz
+tar -xvf ruskwallet0.13.0-linux-x64.tar.gz
 ```
 
  * Bu komut ile gerekli dizine giriyoruz:
