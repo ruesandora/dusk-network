@@ -74,7 +74,7 @@ cd rusk-wallet0.12.0-linux-x64/
 ```
 ufw allow 9000:9005/udp
 
-curl --proto '=https' --tlsv1.2 -sSf https://dusk-infra.ams3.digitaloceanspaces.com/rusk/itn-installer.sh | sh
+curl --proto '=https' --tlsv1.2 -sSfL https://raw.githubusercontent.com/dusk-network/itn-installer/main/itn-installer.sh | sudo sh
 ```
 ## Şimdi altta ki komutu çalıştırın:
 
@@ -116,7 +116,14 @@ service dusk start
 
 ![image](https://user-images.githubusercontent.com/101149671/202687571-add761ac-d0fe-4d76-a9e5-9f07a0e9fe0a.png)
 
-## Şimdi son kısım, gelen tokenleri delege etme:
+## Tokenleri delege edebilmemiz için nodumuzun güncel blokla eşleşmesi lazım, bu komutla takip edebilirsiniz
+
+```
+tail -F /var/log/dusk.log | grep "accept_block"
+```
+
+
+##  Node güncel bloğu yakaladıktan sonra son kısım, gelen tokenleri delege etme:
 
 * İçine giriyoruz:
 ```
@@ -124,7 +131,7 @@ service dusk start
 ```
 * Girdikten sonra `Stake Dusk` diyoruz
 * Miktar: `29995` (30k geldi, biraz fee için vs. bırakın)
-* Gas limit: `2500000000`
+* Gas limit: `2900000000`
 * Gas price: Burada direkt tab tuşuna basın, var sayılan dışına çıkamazsınız
 * Sonra Y diyip enterliyoruz
 * 30/30 işlem gerçekleşecek ve bit TX HASH verecek bize
