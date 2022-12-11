@@ -35,11 +35,11 @@ sudo apt update
 
 * Bu komut ile dosyayı açın:
 ```
-tar -xvf ruskwallet0.12.0-linux-x64.tar.gz
+tar -xvf ruskwallet0.13.0-linux-x64.tar.gz
 ```
 * Dizine girin:
 ```
-cd rusk-wallet0.12.0-linux-x64/
+cd rusk-wallet0.13.0-linux-x64/
 ```
 * Wallet içine girin:
 ```
@@ -50,7 +50,7 @@ cd rusk-wallet0.12.0-linux-x64/
 sudo -i
 wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_amd64.deb
 sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2_amd64.deb
-cd rusk-wallet0.12.0-linux-x64/
+cd rusk-wallet0.13.0-linux-x64/
 ./rusk-wallet
 ```
 * Dün kurduğumuz cüzdanın 12 kelimesini import (recovery) edin.
